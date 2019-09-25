@@ -106,6 +106,7 @@ namespace UXPinTests.Helpers
 
         static public void MoveToElement(IWebDriver driver, By locator)
         {
+            WaitUntilElementAppear(driver, locator);
             var element = driver.FindElement(locator);
             Actions action = new Actions(driver);
             action.MoveToElement(element).Perform();
