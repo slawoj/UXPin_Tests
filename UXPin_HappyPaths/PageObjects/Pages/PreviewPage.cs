@@ -15,7 +15,7 @@ namespace UXPinTests.PageObjects.Pages
         public CommentsData CommentsData { get; }
         private By CommentContextButton => By.CssSelector("nav li[class*='tab']>a[class*='comment']");
         private By CommentContextActive => By.CssSelector("ul[class*='tabs-wrapper']>li[class*='active'] a[href][class*='icon-general-comment']");
-        private By CommentContainer => By.XPath("//section[(contains(@class, 'comments-group selected') and (contains(@style,'display: block;')))]");
+        private By CommentContainer => By.XPath("//section[@class='preview-container']//section[(contains(@class, 'comments-group') and (contains(@class, 'selected')) and (contains(@style,'display: block;')))]");
         private By CommentTextArea => By.XPath("//textarea");
         private By CommentAddButton => By.XPath("//button[contains(@class,'add-comment')]");
         private By PreviewContainer => By.ClassName("preview-container");
