@@ -16,8 +16,8 @@ Instructions:
 
 2) Adjustable in App.config (.\UXPin_Tests\UXPin_HappyPaths\bin\Debug):
 -initial url (default: "https://app.uxpin.com/")
--login (default: "slawekwojewoda@o2.pl")
--password (default: "dfa87468-5b10-4cb2-ba5f-b4fa576a8470")
+-login
+-password
 -implicitWait (default: 60 seconds)
 
 Tech used:
